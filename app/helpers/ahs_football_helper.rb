@@ -1,0 +1,2 @@
+module AhsFootballHelper
+end

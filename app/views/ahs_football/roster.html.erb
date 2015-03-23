@@ -1,0 +1,437 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2>AHS Football Roster</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>">Home</a>
+	        </li>
+	        <li>
+	            AHS Football
+	        </li>
+	        <li class="active">
+	            <strong>Roster</strong>
+	        </li>
+	    </ol>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="wrapper wrapper-content animated fadeInUp">
+
+		    <div class="ibox">
+		        <div class="ibox-title">
+		            <h5>All Football Rosters</h5>
+		            <div class="ibox-tools">
+		                <a href="" class="btn btn-primary btn-xs">Create new roster</a>
+		            </div>
+		        </div>
+		        <div class="ibox-content">
+		            <div class="row m-b-sm m-t-sm">
+		                <div class="col-md-1">
+		                    <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> Refresh</button>
+		                </div>
+		                <div class="col-md-11">
+		                    <div class="input-group">
+		                        <input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary"> Go!</button></span>
+		                    </div>
+		                </div>
+		            </div>
+
+		            <div class="project-list">
+
+		                <table class="table table-hover">
+		                    <tbody>
+			                    <tr>
+			                        <td class="project-status">
+			                            <span class="label label-primary">Active</span>
+			                        </td>
+			                        <td class="project-title">
+			                            <a href="#">AHS Football</a>
+				                        <br />
+				                        <small>All 2014-2015 AHS Football Players</small>
+				                    </td>
+				                    <td class="project-completion">
+				                        <small>87 of 87 players</small>
+				                        <div class="progress progress-mini">
+				                            <div style="width: 100%;" class="progress-bar"></div>
+				                        </div>
+				                    </td>
+				                    <td class="project-people">
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a7.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a1.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a2.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a4.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a1.jpg') %>"></a>
+				                    </td>
+				                    <td class="project-actions">
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+				                    </td>
+			                    </tr>
+			                    <tr>
+			                        <td class="project-status">
+			                            <span class="label label-primary">Active</span>
+			                        </td>
+			                        <td class="project-title">
+			                            <a href="#">AHS Varsity Football</a>
+				                        <br />
+				                        <small>2014-2015 Varsity Football Roster</small>
+				                    </td>
+				                    <td class="project-completion">
+				                        <small>56 of 87 players</small>
+				                        <div class="progress progress-mini">
+				                            <div style="width: 64%;" class="progress-bar"></div>
+				                        </div>
+				                    </td>
+				                    <td class="project-people">
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a7.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a1.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a2.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a4.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a1.jpg') %>"></a>
+				                    </td>
+				                    <td class="project-actions">
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+				                    </td>
+			                    </tr>
+			                    <tr>
+			                        <td class="project-status">
+			                            <span class="label label-primary">Active</span>
+			                        </td>
+			                        <td class="project-title">
+			                            <a href="#">AHS JV Football</a>
+			                        	<br />
+			                        	<small>2014-2015 AHS Junior Varsity Roster</small>
+				                    </td>
+				                    <td class="project-completion">
+				                        <small>47 of 87 players</small>
+				                        <div class="progress progress-mini">
+				                            <div style="width: 54%;" class="progress-bar"></div>
+				                        </div>
+				                    </td>
+				                    <td class="project-people">
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a7.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a6.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a3.jpg') %>"></a>
+				                    </td>
+				                    <td class="project-actions">
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+				                    </td>
+			                	</tr>
+			                	<tr>
+			                        <td class="project-status">
+			                            <span class="label label-primary">Active</span>
+			                        </td>
+			                        <td class="project-title">
+			                            <a href="#">AHS Football Coaches</a>
+				                        <br />
+				                        <small>The leaders of our program</small>
+				                    </td>
+				                    <td class="project-completion">
+				                        <small>13 of 13 coaches</small>
+				                        <div class="progress progress-mini">
+				                            <div style="width: 100%;" class="progress-bar"></div>
+				                        </div>
+				                    </td>
+				                    <td class="project-people">
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a7.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a1.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a2.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a4.jpg') %>"></a>
+				                        <a href=""><img alt="image" class="img-circle" src="<%= image_path('a1.jpg') %>"></a>
+				                    </td>
+				                    <td class="project-actions">
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+				                        <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+				                    </td>
+			                    </tr>
+		            		</tbody>
+		        		</table>
+		    		</div>
+				</div>
+		    </div>
+
+		    <div class="row">
+    			<div class="col-lg-12">
+       				<div class="ibox float-e-margins">
+            			<div class="ibox-title">
+                			<h5>All Players </h5>
+                			<div class="ibox-tools">
+                   				<a class="collapse-link">
+                        			<i class="fa fa-chevron-up"></i>
+                    			</a>
+                    			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        			<i class="fa fa-wrench"></i>
+                    			</a>
+                    			<ul class="dropdown-menu dropdown-user">
+                        			<li>
+                            			<a href="#">Add new Player</a>
+                        			</li>
+                        			<li>
+                            			<a href="#">Config option 2</a>
+                        			</li>
+                    			</ul>
+                    			<a class="close-link">
+                        			<i class="fa fa-times"></i>
+                    			</a>
+                			</div>
+            			</div>
+            			
+            			<div class="ibox-content">
+                			<div class="row">
+                    			<div class="col-sm-2 m-b-xs">
+                        			<select class="input-sm form-control input-s-sm inline">
+                            			<option value="0">All</option>
+                            			<option value="1">Active</option>
+			                            <option value="2">Injured</option>
+			                            <option value="3">Suspended</option>
+                        			</select>
+                    			</div>
+                    			<div class="col-sm-7 m-b-xs">
+                        			<div data-toggle="buttons" class="btn-group">
+                            			<label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> All </label>
+                            			<label class="btn btn-sm btn-white active"> <input type="radio" id="option2" name="options"> Varsity </label>
+                            			<label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options"> JV </label>
+                        			</div>
+                    			</div>
+                    			<div class="col-sm-3">
+                        			<div class="input-group">
+                            			<input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary"> Go!</button></span>
+                        			</div>
+                    			</div>
+                			</div>
+                			<div class="table-responsive">
+                    			<table class="table table-striped">
+                        			<thead>
+                        				<tr>
+				                            <th>#</th>
+				                            <th>Name</th>
+				                            <th>Teams</th>
+				                            <th>Positions</th>
+				                            <th>Class</th>
+				                            <th>Active</th>
+				                        </tr>
+                        			</thead>
+                        		<tbody>
+                        			<tr>
+                            			<td>1</td>
+			                            <td>Ball, Austin</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">RB</span> <span class="label label-primary">WR</span> <span class="label label-primary">DB</span> <span class="label label-primary">KR</span></td>
+			                            <td>Fr. <small>2018</small></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td>2</td>
+			                            <td>Lott, Jeremy</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">DB</span></td>
+			                            <td>Sr. <small>2015</small></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td>3</td>
+			                            <td>Copeland, Nate</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">RB</span> <span class="label label-primary">KR</span></td>
+			                            <td>Jr. <small>2016</small></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td>4</td>
+			                            <td>Alston, Eric</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">RB</span> <span class="label label-primary">KR</span></td>
+			                            <td>Jr. <small>2016</small></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td>5</td>
+			                            <td>Page, Allen</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">S</span> <span class="label label-primary">P</span> <span class="label label-primary">FGK</span></td>
+			                            <td>So. <small>2017</small></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+		                        </tbody>
+                    		</table>
+                		</div>
+
+		            </div>
+        		</div>
+    		</div>
+
+
+    			<div class="col-lg-12">
+       				<div class="ibox float-e-margins">
+            			<div class="ibox-title">
+                			<h5>All Coaches </h5>
+                			<div class="ibox-tools">
+                   				<a class="collapse-link">
+                        			<i class="fa fa-chevron-up"></i>
+                    			</a>
+                    			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        			<i class="fa fa-wrench"></i>
+                    			</a>
+                    			<ul class="dropdown-menu dropdown-user">
+                        			<li>
+                            			<a href="#">Add new Coach</a>
+                        			</li>
+                        			<li>
+                            			<a href="#">Config option 2</a>
+                        			</li>
+                    			</ul>
+                    			<a class="close-link">
+                        			<i class="fa fa-times"></i>
+                    			</a>
+                			</div>
+            			</div>
+            			
+            			<div class="ibox-content">
+                			<div class="row">
+                    			<div class="col-sm-2 m-b-xs">
+                        			<select class="input-sm form-control input-s-sm inline">
+                            			<option value="0">All</option>
+                            			<option value="1">Coordinators</option>
+			                            <option value="2">Position Coaches</option>
+			                            <option value="3">Offense</option>
+			                            <option value="4">Defense</option>
+			                            <option value="5">Special Teams</option>
+                        			</select>
+                    			</div>
+                    			<div class="col-sm-7 m-b-xs">
+                        			<div data-toggle="buttons" class="btn-group">
+                            			<label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> All </label>
+                            			<label class="btn btn-sm btn-white active"> <input type="radio" id="option2" name="options"> Varsity </label>
+                            			<label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options"> JV </label>
+                        			</div>
+                    			</div>
+                    			<div class="col-sm-3">
+                        			<div class="input-group">
+                            			<input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn"><button type="button" class="btn btn-sm btn-primary"> Go!</button></span>
+                        			</div>
+                    			</div>
+                			</div>
+                			<div class="table-responsive">
+                    			<table class="table table-striped">
+                        			<thead>
+                        				<tr>
+				                            <th></th>
+				                            <th>Name</th>
+				                            <th>Teams</th>
+				                            <th>Positions</th>
+				                            <th>Active</th>
+				                        </tr>
+                        			</thead>
+                        		<tbody>
+                        			<tr>
+                            			<td></td>
+			                            <td>Dawson, Dexter</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">Head Coach</span> <span class="label label-primary">QB</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Coley, Michael</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">DB</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Hoffpauir, Michael</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">RB</span> <span class="label label-primary">KR</span> <span class="label">OC</span> <span class="label">QB</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Payne, Dejuan</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">OLB</span> <span class="label">DC</span> <span class="label">LB</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Samas Sr., Darren</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">DC</span> <span class="label label-primary">ILB</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Thomas, Kedrick</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">WR</span> <span class="label">WR</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Latimore, James</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">RB</span> <span class="label">OC</span> <span class="label">RB</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Prater, Thomas</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">DC</span> <span class="label label-primary">S</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Savage, Antwone</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">OC</span> <span class="label label-primary">QB</span> <span class="label label-primary">RB</span> <span class="label">Head Coach</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Willis, Carl</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">ST</span> <span class="label label-primary">P</span> <span class="label label-primary">FGK</span> <span class="label">ST</span> <span class="label">P</span> <span class="label">FGK</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Hicks, Josh</td>
+			                            <td><span class="label label-primary">Varsity</span> </td>
+			                            <td><span class="label label-primary">TE</span> </td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Mercer, Kentrell</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">DL</span> <span class="label">DL</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Reese, Jason</td>
+			                            <td><span class="label label-primary">Varsity</span></td>
+			                            <td><span class="label label-primary">DE</span> </td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+			                        <tr>
+                            			<td></td>
+			                            <td>Slappey, Andre</td>
+			                            <td><span class="label label-primary">Varsity</span> <span class="label">JV</span></td>
+			                            <td><span class="label label-primary">OL</span> <span class="label">OL</span></td>
+			                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+			                        </tr>
+		                        </tbody>
+                    		</table>
+                		</div>
+
+		            </div>
+        		</div>
+
+        </div>
+    </div>
+</div>
