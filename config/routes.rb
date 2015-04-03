@@ -1,7 +1,7 @@
 Myapp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
-  root to: 'ahs_football#dashboard'
+  root to: 'ahs_football#dashboard_2'
 
   # All routes
   get "ahs_football/dashboard"
