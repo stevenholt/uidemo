@@ -29,27 +29,49 @@
                     SB
                 </div>
             </li>
+        <!--
             <li class="<%= is_active_controller('ORIGINAL_dashboards') %>">
                 <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> </a>
             </li>
+        -->
+            <li class="<%= is_active_controller('ORIGINAL_dashboards') %>">
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">My Dashboard</span> <span class="label label-primary pull-right">8</span></a>
+            </li>
+            <li class="<%= is_active_controller('ORIGINAL_dashboards') %>">
+                <a href="#"><i class="fa fa-calendar"></i> <span class="nav-label">My Calendar</span> </a>
+            </li>
+            <li class="<%= is_active_controller('ORIGINAL_dashboards') %>">
+                <a href="#"><i class="fa fa-envelope-o"></i> <span class="nav-label">My Messages</span> <span class="label label-warning pull-right">2</span></a>
+            </li>
+            
             <li class="<%= is_active_controller('ahs_football') %>">
                 <a href=""><i class="fa fa-globe"></i> <span class="nav-label">AHS Football</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level <%= is_active_controller('ahs_football') %>">
-                    <li class="<%= is_active_action('dashboard') %>"><%= link_to "Dashboard", ahs_football_dashboard_path %></li>
+                    <li class="<%= is_active_action('dashboard_2') %>"><%= link_to "Dashboard", ahs_football_dashboard_2_path %> </li>
                     <li class="<%= is_active_action('calendar') %>"><%= link_to "Calendar", ahs_football_calendar_path %></li>
-                    <li class="<%= is_active_action('practice') %>"><%= link_to "Practice", ahs_football_practice_path %></li>
+                <!--
+                    <li class="<%= is_active_action('') %>"><%= link_to "Games", '#' %></li>
+                    <li class="<%= is_active_action('') %>"><%= link_to "Awards", '#' %></li>
+                -->
+                    <li class="<%= is_active_action('practice_2') %>"><%= link_to "Practice", ahs_football_practice_2_path %></li>
                     <li class="<%= is_active_action('playbook') %>"><%= link_to "Playbook", ahs_football_playbook_path %></li>
+
                     <li class="<%= is_active_action('roster') %>"><%= link_to "Roster", ahs_football_roster_path %></li>
+                <!--
                     <li class="<%= is_active_action('scouting') %>"><%= link_to "Scouting", ahs_football_scouting_path %></li>
+                -->
                     <li class="<%= is_active_action('workouts') %>"><%= link_to "Workouts", ahs_football_workouts_path %></li>
                     <li class="<%= is_active_action('statistics') %>"><%= link_to "Statistics", ahs_football_statistics_path %></li>
                     <li class="<%= is_active_action('documents') %>"><%= link_to "File Manager", ahs_football_documents_path %></li>
+                <!--
                     <li class="<%= is_active_action('media') %>"><%= link_to "Media", ahs_football_media_path %></li>
-                    <li class="<%= is_active_action('forum') %>"><%= link_to "Equipment Room", '#' %></li>
+                -->
+                    <li class="<%= is_active_action('equipment') %>"><%= link_to "Equipment", ahs_football_equipment_path %></li>
                     <li class="<%= is_active_action('social_media') %>"><%= link_to "Social Media", ahs_football_social_media_path %></li>
                     <li class="<%= is_active_action('settings') %>"><%= link_to "Settings", ahs_football_settings_path %></li>
                 </ul>
             </li>
+        <!--
             <li class="<%= is_active_controller('dashboards') %>">
                 <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level <%= is_active_controller('dashboards') %>">
@@ -205,6 +227,7 @@
                 <i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span>
                 <% end %>
             </li>
+        -->
         </ul>
     </div>
 </nav>

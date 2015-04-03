@@ -1,0 +1,923 @@
+
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2>AHS Football Practice Schedule</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>">Home</a>
+	        </li>
+	        <li>
+	            AHS Football
+	        </li>
+	        <li class="active">
+	            <strong>Practice Schedule</strong>
+	        </li>
+	    </ol>
+	</div>
+</div>
+
+
+
+<div class="wrapper wrapper-content">
+<div class="row animated fadeInUp">
+    <div class="col-lg-3 pull-right">
+        <div class="wrapper wrapper-content project-manager">
+            <div class="ibox-content">
+                <h4>Coach's Notes</h4>
+                <p>Gotta get after it today.  Lots of stuff to install and review so let's get focused and pay attention.  Give it everything!</p>
+                <p>Remember to warm up and stretch well.  We don't need any more injuries.</p>
+                <p>They're going to come at us with everything they've got.  They have nothing to lose and we have everything to lose.  FOCUS FOCUS FOCUS.</p>
+            </div>
+            <div class="m-t-md">
+                <h4>Excused Absences</h4>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge badge-danger">Doctor</span>
+                            20 - Carlton Jones
+                        </li>
+                        <li class="list-group-item ">
+                            <span class="badge badge-warning">Family</span>
+                            74 - Robert Tucker
+                        </li>
+                        <li class="list-group-item ">
+                            <span class="badge badge-warning">Family</span>
+                            18 - Miles Tucker
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-primary">Sick</span>
+                            11 - Hudson Green
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-t-md">
+                <h4>Injured Players</h4>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge badge-primary">Hamstring</span>
+                            22 - Randall Frost
+                        </li>
+                        <li class="list-group-item ">
+                            <span class="badge badge-primary">Ankle</span>
+                            79 - Armando Trellis
+                        </li>
+                        <li class="list-group-item ">
+                            <span class="badge badge-warning">Shoulder</span>
+                            38 - Brian Miller
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-danger">Knee</span>
+                            2 - Niko Cross
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <h2>Announcements</h2>
+                    <ul class="todo-list m-t small-list">
+                        <li>
+                            <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                            <span class="m-l-xs">Take Jerseys Home and Wash</span>
+                        </li>
+                        <li>
+                            <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                            <span class="m-l-xs">JV Home Thurs 5:30p - ALL WHITE</span>
+                        </li>
+                        <li>
+                            <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                            <span class="m-l-xs">Freshmen stay and clean up</span>
+                        </li>
+                        <li>
+                            <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                            <span class="m-l-xs">Language Check</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-9">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Tuesday, October 14, 2014</h5>
+            <!--  
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">Edit Practice Schedule</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Practice Script</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            -->
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <dl class="dl-horizontal">
+                                <dt>Status:</dt>
+                                <dd><span class="label label-primary">On Schedule</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <dl class="dl-horizontal">
+
+                                <dt>Weekday:</dt>
+                                <dd>Tuesday</dd>
+                                <dt>Date:</dt>
+                                <dd>October 14, 2014</dd>
+                                <dt>Uniform:</dt>
+                                <dd>Full Pads</dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-7" id="cluster_info">
+                            <dl class="dl-horizontal">
+
+                                <dt>Location:</dt>
+                                <dd>Practice Field</dd>
+                                <dt>On Field:</dt>
+                                <dd>4:00 PM</dd>
+                                <dt>Off Field:</dt>
+                                <dd>6:15 PM</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <dl class="dl-horizontal">
+                                <dt>Meetings:</dt>
+                                <dd>
+                                    Formations: All
+                                </dd>
+                                <dt>Kicking Meetings:</dt>
+                                <dd>
+                                    XP &amp; FG
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <dl class="dl-horizontal">
+                                <dt>Attendees:</dt>
+                                <dd>
+                                    <span class="label label-plain">All Coaches</span> <span class="label label-plain">All Players</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ibox-title">
+                <h5>Practice Script</h5>
+            </div>
+
+            <div class="ibox-content inspinia-timeline">
+
+                
+
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-arrows-h"></i>
+                            Period 1<br />
+                            <small class="text-navy">4:00</small><br>
+                            <small>:15</small>
+                        </div>
+                        <div class="col-lg-9 content no-top-border">
+                            <p class="m-b-xs"><strong>Stretch</strong> <span class="label label-primary pull-right">All</span></p>
+                            <p>
+                                [ Coaches notes here ]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-arrows-h"></i>
+                            Period 2<br />
+                            <small class="text-navy">4:15</small><br>
+                            <small>:10</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>XP/FG</strong> <span class="label label-warning pull-right">Special Teams</span></p>
+                            <p>[ Coaches notes here ]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-user-plus"></i>
+                            Period 3<br />
+                            <small class="text-navy">4:25</small><br>
+                            <small>:20</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Situational</strong> - 3rd &amp; Long, 2 Minute Drill <span class="label label-success pull-right">Team Offense</span></p>
+                            
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <h4>3rd &amp; Long</h4>
+                                        <tr>
+                                            <th style="width:10%">#</th>
+                                            <th style="width:15%">Pers</th>
+                                            <th style="width:15%">Hash</th>
+                                            <th>Playcall</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Reg</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Clemson 60 Sticks", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>10</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Reo Auburn 90 Radar", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>10</td>
+                                            <td>RM</td>
+                                            <td><%= link_to "Leo Clemson 81 Flood", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Tall</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 65 Sail", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>10</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Reo Auburn 60 Huskie", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>10</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Clemson 60 Dig", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Tall</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Clemson Lava 5", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>10</td>
+                                            <td>RM</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Reg</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Rick Strong 446 Streak", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Reg</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 60 Skinny", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>14</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 60 Shallow", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td></td>
+                                            <td>RM</td>
+                                            <td><%= link_to "Leo Clemson 60 Crook", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td></td>
+                                            <td>R</td>
+                                            <td><%= link_to "Lion 60 Dig", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td></td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 90 Smash", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td></td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 60 Dagger", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td></td>
+                                            <td>M</td>
+                                            <td><%= link_to "Reo Clemson 80 Arrow", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td></td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Reo Clemson 90 Fade", '#' %></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <h4>2 Minute Drill</h4>
+                                        <tr>
+                                            <th style="width:10%">#</th>
+                                            <th style="width:15%">Pers</th>
+                                            <th style="width:15%">Hash</th>
+                                            <th>Playcall</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-tint"></i>
+                            Break<br />
+                            <small class="text-navy">4:45</small><br>
+                            <small>:05</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Break - 5 Minute</strong></p>
+                            <p>
+                                Recap at the water coolers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-magic"></i>
+                            Period 4<br />
+                            <small class="text-navy">4:50</small><br>
+                            <small>:15</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>All Special Teams</strong> <span class="label label-warning pull-right">Special Teams</span></p>
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:10%">#</th>
+                                            <th style="width:15%">Pers</th>
+                                            <th style="width:15%">Hash</th>
+                                            <th>Playcall</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Punt</td>
+                                            <td></td>
+                                            <td><%= link_to "Punt", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Punt</td>
+                                            <td></td>
+                                            <td><%= link_to "Punt Right Roll Right", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Punt</td>
+                                            <td></td>
+                                            <td><%= link_to "Fake Punt", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>PR</td>
+                                            <td></td>
+                                            <td><%= link_to "Return Right", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>PR</td>
+                                            <td></td>
+                                            <td><%= link_to "Return Left", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>PR</td>
+                                            <td></td>
+                                            <td><%= link_to "Punt Block", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>FG</td>
+                                            <td></td>
+                                            <td><%= link_to "Field Goal", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>XP</td>
+                                            <td></td>
+                                            <td><%= link_to "Extra Point", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>KO</td>
+                                            <td></td>
+                                            <td><%= link_to "Kick Left", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>KO</td>
+                                            <td></td>
+                                            <td><%= link_to "Kick Right", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>KO</td>
+                                            <td></td>
+                                            <td><%= link_to "Squib Left", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>KO</td>
+                                            <td></td>
+                                            <td><%= link_to "Squib Right", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>KR</td>
+                                            <td></td>
+                                            <td><%= link_to "Return Left", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>KR</td>
+                                            <td></td>
+                                            <td><%= link_to "Return Middle", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>KR</td>
+                                            <td></td>
+                                            <td><%= link_to "Return Right", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Hands</td>
+                                            <td>L</td>
+                                            <td><%= link_to "Onside Kick", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Hands</td>
+                                            <td>R</td>
+                                            <td><%= link_to "Onside Kick", '#' %></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-tint"></i>
+                            Break<br />
+                            <small class="text-navy">5:05</small><br>
+                            <small>:05</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Break - 5 Minute</strong></p>
+                            <p>
+                                Recap at the water coolers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-file-text"></i>
+                            Period 5
+                            <br />
+                            <small class="text-navy">5:10</small><br>
+                            <small>:20</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Team Defense</strong> <span class="label label-danger pull-right">Team Defense</span></p>
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:10%">#</th>
+                                            <th style="width:15%">Pers</th>
+                                            <th style="width:15%">Hash</th>
+                                            <th>Playcall</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-tint"></i>
+                            Break<br />
+                            <small class="text-navy">5:30</small><br>
+                            <small>:05</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Break - 5 Minute</strong></p>
+                            <p>
+                                Recap at the water coolers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-file-text"></i>
+                            Period 6
+                            <br />
+                            <small class="text-navy">5:35</small><br>
+                            <small>:20</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Team Offense</strong> <span class="label label-success pull-right">Team Offense</span></p>
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:10%">#</th>
+                                            <th style="width:15%">Pers</th>
+                                            <th style="width:15%">Hash</th>
+                                            <th>Playcall</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Reg</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Rick Weak 47 Counter", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>10</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 63 Streak", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>10</td>
+                                            <td>RM</td>
+                                            <td><%= link_to "Auburn 90 Fast", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Reg</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Reo Clemson 60 Crook", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>LC Spec</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Lincoln Right Jet Right", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Tall</td>
+                                            <td>RM</td>
+                                            <td><%= link_to "Pistol 38", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>10</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Reo Auburn 90 Radar", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Jumbo</td>
+                                            <td>RM</td>
+                                            <td><%= link_to "Robin 46", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>14</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Reo Clemson 60 Crook", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Reg</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Lynn Strong 47", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 90 Fade", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Reg</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Lynn Weak 24 Cut", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Reg</td>
+                                            <td>RM</td>
+                                            <td><%= link_to "Lynn Weak 46 Counter", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Jumbo</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Falcon 25 Load", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Jumbo</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Robin 446 Streak", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Scab</td>
+                                            <td>M</td>
+                                            <td><%= link_to "Rick Strong 46 Counter", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Reg</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Auburn 90 Smash", '#' %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>10</td>
+                                            <td>LM</td>
+                                            <td><%= link_to "Clemson 60 Dig", '#' %></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-tint"></i>
+                            Break<br />
+                            <small class="text-navy">5:55</small><br>
+                            <small>:05</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Break - 5 Minute</strong></p>
+                            <p>
+                                Recap at the water coolers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-xs-3 date">
+                            <i class="fa fa-file-text"></i>
+                            Period 7
+                            <br />
+                            <small class="text-navy">6:00</small><br>
+                            <small>:15</small>
+                        </div>
+                        <div class="col-xs-9 content">
+                            <p class="m-b-xs"><strong>Run</strong> <span class="label label-primary pull-right">All</span></p>
+                            <p>
+                            	[ Coaches notes here ]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green',
+    });
+
+    /* initialize the external events
+     -----------------------------------------------------------------*/
+
+
+    $('#external-events div.external-event').each(function () {
+
+        // store data so the calendar knows to render an event upon drop
+        $(this).data('event', {
+            title: $.trim($(this).text()), // use the element's text as the event title
+            stick: true // maintain when user navigates (see docs on the renderEvent method)
+        });
+
+        // make the event draggable using jQuery UI
+        $(this).draggable({
+            zIndex: 1111999,
+            revert: true,      // will cause the event to go back to its
+            revertDuration: 0  //  original position after the drag
+        });
+
+    });
+
+
+    /* initialize the calendar
+     -----------------------------------------------------------------*/
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+
+    $('#calendar').fullCalendar({
+        height: 400,
+        defaultView: 'agendaWeek',
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        editable: true,
+        droppable: true, // this allows things to be dropped onto the calendar
+        drop: function () {
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+                // if so, remove the element from the "Draggable Events" list
+                $(this).remove();
+            }
+        },
+        events: [
+            {
+                title: 'All Day Event',
+                start: new Date(y, m, 1)
+            },
+            {
+                id: 999,
+                title: 'Repeating Event',
+                start: new Date(y, m, d - 3, 16, 0),
+                allDay: false,
+            },
+            {
+                id: 999,
+                title: 'Repeating Event',
+                start: new Date(y, m, d + 4, 16, 0),
+                allDay: false
+            },
+            {
+                title: 'Meeting',
+                start: new Date(y, m, d, 10, 30),
+                allDay: false
+            },
+            {
+                title: 'Lunch',
+                start: new Date(y, m, d, 12, 0),
+                end: new Date(y, m, d, 14, 0),
+                allDay: false
+            },
+            {
+                title: 'Birthday Party',
+                start: new Date(y, m, d + 1, 19, 0),
+                end: new Date(y, m, d + 1, 22, 30),
+                allDay: false
+            },
+            {
+                title: 'Click for Google',
+                start: new Date(y, m, 28),
+                end: new Date(y, m, 29),
+                url: 'http://google.com/'
+            }
+        ],
+    });
+    
+});
+
+$(function() {
+
+    var updatingChart = $(".updating-chart").peity("line", { fill: '#1ab394', stroke: '#169c81', width: 64 })
+
+    setInterval(function () {
+        var random = Math.round(Math.random() * 10)
+        var values = updatingChart.text().split(",")
+        values.shift()
+        values.push(random)
+
+        updatingChart
+                .text(values.join(","))
+                .change()
+    }, 1000);
+
+});
+
+$('.i-checks').iCheck({
+    checkboxClass: 'icheckbox_square-green',
+    radioClass: 'iradio_square-green',
+});
+
+</script>
+
+<% end %>

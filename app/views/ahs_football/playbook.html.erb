@@ -1,1 +1,44 @@
-find me in app/views/ahs_football/playbook.html.erb
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2>AHS Football Playbook</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>">Home</a>
+	        </li>
+	        <li>
+	            AHS Football
+	        </li>
+	        <li class="active">
+	            <strong>Playbook</strong>
+	        </li>
+	    </ol>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<div class="wrapper wrapper-content animated fadeInUp">
+			<div class="col-lg-6">
+				<h1>Offense</h1>
+					<h4>By Play Type</h4>
+					<h2>Rush - Favorite Plays (Most called)</h2>
+					<h2>Rush - Hot Plays</h2>
+					<h2>Rush - Worst Plays</h2><br>
+					<h2>Pass - Favorite Plays (Most called)</h2>
+					<h2>Pass - Hot Plays</h2>
+					<h2>Pass - Worst Plays</h2><br>
+					<h4>By Formation</h4>
+					<h2>Hot Formations</h2>
+					<h2>Cold Formations</h2><br>
+					<h4>By Scenario</h4>
+					<h2>Red Zone</h2>
+					<h2>Most 1st Downs (by situation)</h2>
+			</div>
+			<div class="col-lg-6">
+				<h1>Defense</h1>
+					<h2>Hot Plays</h2>
+					<h2>Favorite Plays</h2>
+					<h2>Worst Plays</h2>
+			</div>
+		</div>
+	</div>
+</div>

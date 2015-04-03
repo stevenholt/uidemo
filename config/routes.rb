@@ -1,12 +1,13 @@
 Myapp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
-  root to: 'dashboards#dashboard_1'
+  root to: 'ahs_football#dashboard'
 
   # All routes
   get "ahs_football/dashboard"
   get "ahs_football/calendar"
   get "ahs_football/practice"
+  get "ahs_football/practice_2"
   get "ahs_football/playbook"
   get "ahs_football/roster"
   get "ahs_football/scouting"
@@ -14,9 +15,11 @@ Myapp::Application.routes.draw do
   get "ahs_football/statistics"
   get "ahs_football/documents"
   get "ahs_football/media"
-  get "ahs_football/forum"
+  get "ahs_football/equipment"
   get "ahs_football/social_media"
   get "ahs_football/settings"
+
+  get "ahs_football/dashboard_2"
 
   get "dashboards/dashboard_1"
   get "dashboards/dashboard_2"

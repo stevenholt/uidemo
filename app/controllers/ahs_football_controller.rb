@@ -3,10 +3,16 @@ class AhsFootballController < ApplicationController
 	def dashboard
   end
 
+  def dashboard_2
+  end
+
   def calendar
   end
 
   def practice
+  end
+
+  def practice_2
   end
 
   def playbook
@@ -28,6 +34,9 @@ class AhsFootballController < ApplicationController
   end
 
   def media
+  end
+
+  def equipment
   end
 
   def forum
